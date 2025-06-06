@@ -92,8 +92,6 @@ git pull
 ./scripts/feeds install -a
 
 make menuconfig
-
-
 # ### 7再次编译
 
 # make download -j8
