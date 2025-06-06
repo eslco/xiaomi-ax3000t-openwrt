@@ -33,6 +33,7 @@ function git_sparse_clone() {
   mv -f $@ ../package
   cd .. && rm -rf $repodir
 }
+# iStore
 git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
 git_sparse_clone main https://github.com/linkease/istore luci
 
@@ -46,15 +47,12 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
 echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 
-# iStore
-# git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
-# git_sparse_clone main https://github.com/linkease/istore luci
 
 # 在线用户 luci-app-onliner @nlbwmon
-# git_sparse_clone main https://github.com/haiibo/packages luci-app-onliner
-# sed -i '$i uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default-settings/files/zzz-default-settings
-# sed -i '$i uci commit nlbwmon' package/lean/default-settings/files/zzz-default-settings
-# chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
+git_sparse_clone main https://github.com/haiibo/packages luci-app-onliner
+sed -i '$i uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default-settings/files/zzz-default-settings
+sed -i '$i uci commit nlbwmon' package/lean/default-settings/files/zzz-default-settings
+chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
 
 # 修改版本为编译日期
 date_version=$(date +"%y.%m.%d")
