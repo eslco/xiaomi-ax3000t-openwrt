@@ -1,9 +1,14 @@
 # Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
 
-# OpenWrt large config files
+# OpenWrt CRITICAL: These files are huge and break indexing
 .config
 .config.*
 *.config
+seed.config
+.config.menuconfig
+
+# Any file over 100KB (common OpenWrt issue)
+# Use file size limits in Cursor settings
 
 # Build directories and files
 bin/
@@ -12,6 +17,8 @@ staging_dir/
 tmp/
 logs/
 dl/
+toolchain/
+tools/
 
 # Large files and binaries
 *.bin
@@ -22,19 +29,40 @@ dl/
 *.xz
 *.7z
 *.zip
+*.iso
+*.squashfs
 
 # Compiled objects
 *.o
 *.so
 *.a
+*.ko
 
-# Package feeds
+# Package feeds and downloads
 feeds/
 package/feeds/
+dl/
 
-# Kernel source if present
+# Kernel and firmware
 linux-*/
 kernel/
+firmware/
+target/
 
-# Large documentation
+# Large documentation and generated files
 docs/build/
+*.log
+*.orig
+*.rej
+
+# Git and version control (reduce load)
+.git/objects/
+.git/logs/
+
+# MINIMAL BUT EFFECTIVE - Only ignore the biggest problems
+.config*
+seed.config
+*.log
+bin/
+dl/
+feeds/
