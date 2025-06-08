@@ -4,7 +4,6 @@
 .config
 .config.*
 *.config
-seed.config
 .config.menuconfig
 
 # Any file over 100KB (common OpenWrt issue)
