@@ -1,3 +1,16 @@
+<h1>Hi 👋, I'm Aesin Lin</h1>
+<p>A passionate SemiStack Dev from SF~</p>
+<h2>🚀 Languages and Tools I Use</h2>
+<p><a target="_blank" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" style="display: inline-block;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="42" height="42" /></a></p>
+<h2>✒️ Recent Posts</h2>
+<ul>
+<li><a target="_blank" href="https://x.com/karminski3/status/1931864821492027573">机械臂可以接大模型了！来看——LeRobot</a></li>
+<h2>⚡️ Where to find me</h2>
+<p><a target="_blank" href="https://twitter.com/karminski3" style="display: inline-block;"><img src="https://img.shields.io/badge/twitter-x?style=for-the-badge&logo=x&logoColor=white&color=%230f1419" alt="twitter" /></a></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Aesin Lin!&" alt="Aesin Lin!" /></p>
+<p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Aesin Lin!" alt="Aesin Lin!" /></a></p>
+
+
 # 适用于小米ax3000t的openwrt固件
 
 
